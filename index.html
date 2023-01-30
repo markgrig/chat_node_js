@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <title> Чат </title>
+</head>
+<script src = "/socket.io/socket.io.js"></script>
+<body>
+    <h3 class ="chat-topic"> Веб-чат </h3>
+    <div class="flex-chat">
+        <ol class = "users-list">
+            <div>Список участников</div>
+        </ol>
+        <div class="chat-form">
+            <div class = "box">
+                <div class = "topic-name-input">
+                    Введите имя:
+                </div>
+                <input class="name-input" type="text">
+                <div class = "but">
+                    <div class = "topic-message-input">
+                        Введите сообщение:
+                    </div>
+                    <textarea class="message-input" type="text">
+                        
+                    </textarea> 
+                </div>
+                <button class = "but-send">
+                    Отправить
+                </button>
+            </div> 
+        </div>
+        <div class = "chat-box">
+            <div class="chat">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

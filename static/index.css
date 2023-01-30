@@ -1,0 +1,160 @@
+body{
+    background-image: url("background.jpg");
+    box-sizing: border-box;
+}
+
+.but-send{
+    font-size: 30px;
+    display: block;
+    margin: 10px auto;
+
+    background: rgba(38, 108, 238, 1);
+    border: solid 1px white;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.users-list{
+    background: rgba(38, 108, 238, 0.7);
+    color: azure;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 25px;
+    height: min-content;
+    width: 20vw;
+    overflow-y: auto;
+    border: solid 2px gold;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.chat-info{
+    text-align: center;
+    font-size: 150%;
+    height: 50px;
+    margin: 5px;
+    height: fit-content;
+    white-space: break-spaces;
+    word-break: break-word;
+}
+
+.flex-chat{
+    display: flex;
+    justify-content: center;
+    margin-top: 0vh;
+}
+
+.chat-topic{
+    font-size: 32px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: max-content;
+    color: white;
+}
+
+.chat-form{
+    box-sizing: border-box;
+}
+
+.chat-box{
+    overflow: hidden;
+    width: 50vw;
+    padding: 2vh 20px;
+    margin: 0% 1%;
+    height: 60vh;
+    background: rgba(253, 253, 253, 0.9);
+    border: solid 2px gold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 100px 2px white;
+}
+
+.chat{
+    color: black;
+    max-height: 54vh;
+    overflow: auto;
+}
+
+.box{
+    width: 25vw;
+    padding: 20px 30px;
+    background: rgba(173, 163, 69, 0.781) ;
+    border: solid 2px gold;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.name-input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+    font-size: 120%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.2);
+    border: solid 1px rgb(250, 250, 250) ;
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+.topic-name-input{
+    color: white;
+    filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
+    text-align: center;
+    font-size: 120%;
+}
+
+.message-input{
+
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+ 
+    background-color: rgba(0, 128, 0, 0.2);
+    font-weight: 600;
+    color: white;
+    border: solid 1px rgb(250, 250, 250) ;
+    border-radius: 5px;
+    height: 100px;
+    font-size: 14px;
+}
+
+.topic-message-input{
+    color: white;
+    filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
+    text-align: center;
+    font-size: 110%;
+}
+
+@media  (max-width: 700px) {
+    .flex-chat{
+        display: block;
+    }
+
+    .chat-box{
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .users-list{
+        width: 60vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .box{
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
