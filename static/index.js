@@ -25,20 +25,30 @@ socket.on('userDisconnected', (data) => {
 });
 
 socket.on('addMes', (data) => {
-    const div = document.createElement("div");
-    div.className = "chat-info";
-    div.innerHTML = `${data.name}: ${data.message} \n`;
-    chatField.append(div);
-    console.log("name:", myName, data.message);
+
+    const boxMess = document.createElement("div");
+    const divName = document.createElement("div");
+    const divMess = document.createElement("div");
+
+    boxMess.className = "box-mess";
+    divName.className = "chat-name";
+    divMess.className = "chat-mess";
+
+    divName.innerHTML =  data.name;
+    divMess.innerHTML  = data.message;
+
+    boxMess.append( divName )
+    boxMess.append( divMess )
+
+    chatField.append(boxMess);
+
     if(data.message.includes(myName)){
         const audio = new Audio("ding.mp3");
         if(audio) {
             console.log(audio);
             audio.play();
         }
-    } else {
-        console.log('nema');
-    }
+    } 
 });
 
 socket.on('addUser', (token, data) => {

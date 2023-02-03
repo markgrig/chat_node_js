@@ -1,7 +1,7 @@
 const http = require('http');
-const { APP_PORT, APP_IP} = process.env;
-//const APP_PORT = 80
-//const APP_IP  = 'localhost'
+//const { APP_PORT, APP_IP} = process.env;
+const APP_PORT = 80
+const APP_IP  = 'localhost'
 
 const express = require('express');
 const app = express();
