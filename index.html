@@ -11,33 +11,44 @@
 <body>
     <h3 class ="chat-topic"> Веб-чат </h3>
     <div class="flex-chat">
-        <ol class = "users-list">
-            <div>Список участников</div>
-        </ol>
-        <div class="chat-form">
-            <div class = "box">
+        
+        <div>
+            <div class = "box-name-input">
                 <div class = "topic-name-input">
                     Введите имя:
                 </div>
                 <input class="name-input" type="text">
-                <div class = "but">
-                    <div class = "topic-message-input">
-                        Введите сообщение:
+            </div> 
+
+            <ol class = "users-list">
+                <div>Список участников</div>
+            </ol>
+            
+        </div>
+
+        
+
+        <div class = "chat-mes-box">
+            <div class="chat">
+            
+            </div>
+            <div class = "box-message-form">
+               
+                <div class  ="flex-class">
+                    <div class = "box-message-input" >
+                        <div class = "topic-message-input">
+                            Введите сообщение:
+                        </div>
+                        <textarea class="message-input" type="text"></textarea> 
                     </div>
-                    <textarea class="message-input" type="text">
-                        
-                    </textarea> 
+        
+                    <button class = "but-send">
+                        Отправить
+                    </button>
                 </div>
-                <button class = "but-send">
-                    Отправить
-                </button>
             </div> 
         </div>
-        <div class = "chat-box">
-            <div class="chat">
-
-            </div>
-        </div>
+        
     </div>
 </body>
 <script src="index.js"></script>

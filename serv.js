@@ -1,10 +1,10 @@
 const http = require('http');
-const url = require('url');
-const hostname = '127.0.0.1', port = 3000;
-const path = require('path');
+const { APP_PORT, APP_IP} = process.env;
+//const APP_PORT = 80
+//const APP_IP  = 'localhost'
 
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
 
 const server = http.createServer(app);
 const io = require('socket.io')(server);
@@ -57,8 +57,7 @@ io.sockets.on('connection', function(socket) {
     });
 });
 
-
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(APP_PORT, APP_IP, () => {
+    console.log(`Server running at http://${APP_IP}:${APP_PORT}/`);
 });
+
